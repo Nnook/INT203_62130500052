@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+
+    
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="card">
+                <div class="upper"> <img
+                        src="https://images.unsplash.com/photo-1525780022613-72fa77909e62?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1487&q=80"
+                        class="img-fluid"> </div>
+                <div class="user text-center">
+                    <div class="profile"> <img
+                            src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.0-9/119653898_1261202810926528_9092315268385956431_n.jpg?_nc_cat=101&ccb=2&_nc_sid=09cbfe&_nc_ohc=R9XVRYgtRcwAX9Hu2UR&_nc_ht=scontent.fbkk2-4.fna&oh=be38abd3a2d448f452aa370b03e68837&oe=603F9687"
+                            class="rounded-circle" width="80">
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+
+                    <h4 class="mb-0">{{firstname}} {{lastname}}</h4> <span
+                        class="text-muted d-block mb-2">{{status}}</span> <button
+                        class="btn btn-primary btn-sm follow">Follow</button>
+                    <div class="d-flex justify-content-between align-items-center mt-4 px-4">
+                        <div class="stats">
+                            <h6 class="mb-0">Followers</h6> <span>8,797</span>
+                        </div>
+                        <div class="stats">
+                            <h6 class="mb-0">Projects</h6> <span>142</span>
+                        </div>
+                        <div class="stats">
+                            <h6 class="mb-0">Ranks</h6> <span>129</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my main.js -->
+    <script src="./profile.js"></script>
+</body>
+
+</html>
