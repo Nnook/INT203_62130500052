@@ -24,7 +24,7 @@
   <div id="app" class="">
     <div class="mx-auto container">
       <div class="flex items-center justify-end bg-black mr-2 text-white">
-        <p > Number of Photos: <span class="mx-2 text-lg">X</span>
+        <p> Number of Photos: <span class="mx-2 text-lg">X</span>
         </p>
 
       </div>
@@ -32,16 +32,16 @@
       <div class="m-5">
         <ul class="grid grid-cols-2 gap-y-10 ml-10 lg:grid-cols-5">
           <li v-for="(photo, index) in photos">
-            <p class="text-lg font-semibold">title</p>
+            <p class="text-lg font-semibold"> {{ photo.title }} </p>
             <img :src="photo.src" class="h-48 w-32" :alt="photo.title">
             <div class="flex flex-row justify-start space-x-1">
-              <p v-if="photo.like > 0"> X
+              <p v-if="photo.like > 0"> {{photo.like}}
                 <span>like</span>
+                <span class="material-icons"> favorite_border </span>
               </p>
-
-              <button @click="favorite(index)" class=" focus:outline-none ">
+              <button v-else @click="favorite(index)" class=" focus:outline-none ">        
                 <!-- "you can use "class = fill-current text-red-500" for changing to red color, original is black -->
-                <svg class="" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <svg class="fill-current text-red-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                   <path d="M0 0h24v24H0z" fill="none" />
                   <path
                     d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
