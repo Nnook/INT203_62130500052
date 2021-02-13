@@ -63,8 +63,14 @@
                         favor: true,
                         like: 2
                     }
+                    
 
-                ],
+                ],methods: {
+                    favorite(index){
+                        this.favorite[index].favor =! this.favorite[index].favor
+                    }
+                    
+                }
                
 
             }

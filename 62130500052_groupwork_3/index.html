@@ -38,7 +38,7 @@
               <p v-if="photo.like > 0"> {{photo.like}}
                 <span>like</span>
               </p>
-              <button v-on:click="favorite(index)" class=" focus:outline-none ">        
+              <button @click="favorite(index)" class=" focus:outline-none ">        
                 <!-- "you can use "class = fill-current text-red-500" for changing to red color, original is black -->
                 <svg class="fill-current text-red-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                   <path d="M0 0h24v24H0z" fill="none" />
