@@ -11,19 +11,19 @@
                     {
                         src: 'images/2.jpg',
                         title: 'Hug & Love',
-                        favor: false,
+                        favor: true,
                         like: 2
                     },
                     {
                         src: 'images/3.jpg',
                         title: 'Good Night',
-                        favor: false,
+                        favor: true,
                         like: 6
                     },
                     {
                         src: 'images/4.jpg',
                         title: 'Architecture',
-                        favor: false,
+                        favor: true,
                         like: 1
 
                     },
@@ -48,7 +48,7 @@
                     {
                         src: 'images/8.jpg',
                         title: 'Oxygen',
-                        favor: false,
+                        favor: true,
                         like: 1
                     },
                     {
@@ -60,7 +60,7 @@
                     {
                         src: 'images/10.jpg',
                         title: 'Light',
-                        favor: false,
+                        favor: true,
                         like: 2
                     }
 

@@ -24,7 +24,7 @@
   <div id="app" class="">
     <div class="mx-auto container">
       <div class="flex items-center justify-end bg-black mr-2 text-white">
-        <p> Number of Photos: <span class="mx-2 text-lg">X</span>
+        <p> Number of Photos: <span class="mx-2 text-lg">12</span>
         </p>
 
       </div>
@@ -37,9 +37,8 @@
             <div class="flex flex-row justify-start space-x-1">
               <p v-if="photo.like > 0"> {{photo.like}}
                 <span>like</span>
-                <span class="material-icons"> favorite_border </span>
               </p>
-              <button v-else @click="favorite(index)" class=" focus:outline-none ">        
+              <button v-on:click="favorite(index)" class=" focus:outline-none ">        
                 <!-- "you can use "class = fill-current text-red-500" for changing to red color, original is black -->
                 <svg class="fill-current text-red-500" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                   <path d="M0 0h24v24H0z" fill="none" />
