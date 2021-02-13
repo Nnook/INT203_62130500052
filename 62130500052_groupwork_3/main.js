@@ -11,19 +11,19 @@
                     {
                         src: 'images/2.jpg',
                         title: 'Hug & Love',
-                        favor: true,
+                        favor: false,
                         like: 2
                     },
                     {
                         src: 'images/3.jpg',
                         title: 'Good Night',
-                        favor: true,
+                        favor: false,
                         like: 6
                     },
                     {
                         src: 'images/4.jpg',
                         title: 'Architecture',
-                        favor: true,
+                        favor: false,
                         like: 1
 
                     },
